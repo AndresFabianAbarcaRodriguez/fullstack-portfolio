@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Portafolio profesional de Andrés Abarca, Full Stack Developer"/>
+  <title>Andrés Abarca — Full Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+  <!-- PARTÍCULAS FLOTANTES -->
+  <div class="particles" aria-hidden="true">
+    <span class="particle p1">💻</span>
+    <span class="particle p2">&lt;/&gt;</span>
+    <span class="particle p3">⚡</span>
+    <span class="particle p4">🔧</span>
+    <span class="particle p5">{ }</span>
+    <span class="particle p6">⌨️</span>
+    <span class="particle p7">🖥️</span>
+    <span class="particle p8">#</span>
+    <span class="particle p9">🚀</span>
+    <span class="particle p10">&lt;div&gt;</span>
+    <span class="particle p11">⚙️</span>
+    <span class="particle p12">01</span>
+    <span class="particle p13">📡</span>
+    <span class="particle p14">( )</span>
+    <span class="particle p15">🔌</span>
+  </div>
+
+  <!-- NAVBAR -->
+  <input type="checkbox" id="menu-toggle" class="menu-toggle"/>
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">A<span>.</span>Abarca</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+      <label for="menu-toggle" class="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </label>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-tag">
+        <span class="dot"></span> Disponible para trabajar
+      </div>
+      <h1>Hola, soy<br><span class="highlight">Andrés Abarca</span></h1>
+      <p class="hero-desc">
+        Full Stack Developer con pasión por construir aplicaciones web modernas,
+        escalables y centradas en el usuario. Transformo ideas en productos digitales
+        reales, desde el frontend hasta el backend.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">Ver proyectos</a>
+        <a href="#contact" class="btn-outline">Contáctame</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section id="about">
+    <div class="container">
+      <div class="sec-header">
+        <p class="sec-tag">// sobre mí</p>
+        <h2 class="sec-title">Quién soy</h2>
+        <div class="sec-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Soy <strong>Andrés Abarca</strong>, Ingeniero en Sistemas con especialización
+          en desarrollo web Full Stack. Me dedico a diseñar y construir aplicaciones
+          completas, desde interfaces de usuario intuitivas hasta arquitecturas de
+          backend robustas y escalables.</p>
+          <p>Trabajo con tecnologías modernas como <strong>React, Node.js y TypeScript</strong>,
+          aplicando siempre buenas prácticas de desarrollo: código limpio, diseño
+          responsive, arquitecturas escalables y seguridad desde el primer día.</p>
+          <p>Me apasiona resolver problemas reales con tecnología. Cada proyecto
+          es una oportunidad para crear algo que <strong>genere valor, sea fácil de usar
+          y esté construido para durar</strong>. Estoy listo para sumarme a equipos
+          que compartan esa visión.</p>
+        </div>
+        <div class="about-img-wrap">
+          <img src="img/perfil.png" alt="Andrés Abarca - Full Stack Developer" class="about-img"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="skills">
+    <div class="container">
+      <div class="sec-header">
+        <p class="sec-tag">// habilidades</p>
+        <h2 class="sec-title">Stack tecnológico</h2>
+        <div class="sec-line"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-chip accent">React.js</div>
+        <div class="skill-chip accent">Node.js</div>
+        <div class="skill-chip accent">TypeScript</div>
+        <div class="skill-chip accent">Next.js</div>
+        <div class="skill-chip">JavaScript</div>
+        <div class="skill-chip">HTML5</div>
+        <div class="skill-chip">CSS3</div>
+        <div class="skill-chip">PostgreSQL</div>
+        <div class="skill-chip">MongoDB</div>
+        <div class="skill-chip">REST APIs</div>
+        <div class="skill-chip">Spring Boot</div>
+        <div class="skill-chip">Docker</div>
+        <div class="skill-chip">Git &amp; GitHub</div>
+        <div class="skill-chip">AWS</div>
+        <div class="skill-chip">Figma</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="projects">
+    <div class="container">
+      <div class="sec-header">
+        <p class="sec-tag">// proyectos</p>
+        <h2 class="sec-title">Mi trabajo</h2>
+        <div class="sec-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-thumb">🌤️</div>
+          <div class="project-body">
+            <h3>SkyPulse — Clima &amp; Noticias</h3>
+            <p>Aplicación web de clima y noticias en tiempo real. Muestra pronóstico
+            de 7 días, alertas meteorológicas activas, calidad del aire y noticias
+            destacadas con diseño responsivo.</p>
+            <div class="project-tags">
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">Responsive</span>
+              <span class="project-tag">UX/UI</span>
+            </div>
+            <div class="project-links">
+              <a href="proyecto-clima.html" target="_blank" class="project-link">Ver demo →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb">🍺</div>
+          <div class="project-body">
+            <h3>LicorHub — Punto de Venta</h3>
+            <p>Sistema de punto de venta para licorera con catálogo de productos
+            por categoría, carrito de compras, cálculo automático de IVA, múltiples
+            métodos de pago y panel de estadísticas de ventas.</p>
+            <div class="project-tags">
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">POS</span>
+            </div>
+            <div class="project-links">
+              <a href="proyecto-pos.html" target="_blank" class="project-link">Ver demo →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb">🛒</div>
+          <div class="project-body">
+            <h3>NovaTech Store — E-Commerce</h3>
+            <p>Tienda online de tecnología con hero animado, grid de productos con
+            badges de oferta, estadísticas de clientes, banner promocional y
+            diseño moderno dark mode.</p>
+            <div class="project-tags">
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">E-Commerce</span>
+              <span class="project-tag">Dark Mode</span>
+            </div>
+            <div class="project-links">
+              <a href="proyecto-tienda.html" target="_blank" class="project-link">Ver demo →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contact">
+    <div class="container">
+      <div class="sec-header" style="text-align:center;">
+        <p class="sec-tag" style="justify-content:center;display:flex;">// contacto</p>
+        <h2 class="sec-title">Hablemos</h2>
+        <div class="sec-line" style="margin:16px auto 0;"></div>
+      </div>
+      <p class="contact-desc">¿Tienes un proyecto en mente o quieres conversar sobre oportunidades laborales? Estoy disponible y me encantaría escucharte.</p>
+      <div class="contact-cards">
+
+        <a href="mailto:andres.abarca.rodriguez@est.una.ac.cr" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="M2 7l10 7 10-7"/>
+            </svg>
+          </div>
+          <div class="contact-info">
+            <strong>Email</strong>
+            <span>andres.abarca.rodriguez@est.una.ac.cr</span>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/andres-abarca-rodriguez-b369493b4/" target="_blank" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </div>
+          <div class="contact-info">
+            <strong>LinkedIn</strong>
+            <span>/in/andres-abarca-rodriguez</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/AndresFabianAbarcaRodriguez" target="_blank" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+          </div>
+          <div class="contact-info">
+            <strong>GitHub</strong>
+            <span>@AndresFabianAbarcaRodriguez</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <span>© 2026 Andrés Abarca</span>
+      <span>Hecho con ♥ — Full Stack Developer</span>
+    </div>
+  </footer>
+</body>
+</html>
