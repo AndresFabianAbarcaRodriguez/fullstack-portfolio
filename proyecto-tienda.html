@@ -4,7 +4,6 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>NovaTech Store — E-Commerce</title>
-  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
     :root {
@@ -18,7 +17,7 @@
       --border: rgba(255,255,255,0.07);
     }
     html { scroll-behavior: smooth; }
-    body { background: var(--bg); color: var(--text); font-family: 'Outfit', sans-serif; overflow-x: hidden; }
+    body { background: var(--bg); color: var(--text); font-family: system-ui, sans-serif; overflow-x: hidden; }
 
     /* NAV */
     nav {
@@ -29,7 +28,7 @@
       backdrop-filter: blur(20px);
       border-bottom: 1px solid var(--border);
     }
-    .nav-logo { font-family: 'Clash Display', sans-serif; font-size:1.4rem; font-weight:700; letter-spacing:-0.02em; }
+    .nav-logo { font-family: system-ui, sans-serif; font-size:1.4rem; font-weight:700; letter-spacing:-0.02em; }
     .nav-logo span { color: var(--accent); }
     .nav-links { display:flex; gap:32px; list-style:none; }
     .nav-links a { text-decoration:none; color:var(--muted); font-size:.9rem; font-weight:500; transition:color .2s; }
@@ -75,7 +74,7 @@
       text-transform:uppercase; margin-bottom:28px;
     }
     .hero h1 {
-      font-family:'Clash Display', sans-serif;
+      font-family:system-ui, sans-serif;
       font-size: clamp(3rem, 7vw, 6rem);
       font-weight:700; line-height:.95;
       letter-spacing:-.04em; margin-bottom:24px;
@@ -111,7 +110,7 @@
     }
     .stat-item { text-align:center; flex:1; }
     .stat-num {
-      font-family:'Clash Display', sans-serif;
+      font-family:system-ui, sans-serif;
       font-size:2.4rem; font-weight:700;
       color:var(--accent); letter-spacing:-.03em;
       display:block;
@@ -123,7 +122,7 @@
     .section-header { display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:52px; }
     .section-tag { font-size:.75rem; font-weight:700; color:var(--accent); letter-spacing:.12em; text-transform:uppercase; margin-bottom:8px; }
     .section-title {
-      font-family:'Clash Display', sans-serif;
+      font-family:system-ui, sans-serif;
       font-size:clamp(1.8rem,3.5vw,2.6rem);
       font-weight:700; letter-spacing:-.03em;
     }
@@ -136,7 +135,7 @@
       border:1px solid var(--border);
       border-radius:14px; overflow:hidden;
       transition:transform .25s, border-color .25s, box-shadow .25s;
-      cursor:pointer;
+      cursor:default;
     }
     .product-card:hover {
       transform:translateY(-6px);
@@ -164,15 +163,15 @@
     .product-category { font-size:.72rem; color:var(--muted); text-transform:uppercase; letter-spacing:.08em; margin-bottom:6px; }
     .product-name { font-weight:600; font-size:.95rem; margin-bottom:12px; }
     .product-footer { display:flex; justify-content:space-between; align-items:center; }
-    .product-price { font-family:'Clash Display',sans-serif; font-size:1.2rem; font-weight:700; color:var(--accent); }
-    .product-price s { font-size:.8rem; color:var(--muted); font-family:'Outfit',sans-serif; margin-left:4px; font-weight:400; }
+    .product-price { font-family:system-ui, sans-serif; font-size:1.2rem; font-weight:700; color:var(--accent); }
+    .product-price s { font-size:.8rem; color:var(--muted); font-family:system-ui, sans-serif; margin-left:4px; font-weight:400; }
     .add-btn {
       width:34px; height:34px; border-radius:8px;
       background:rgba(232,255,71,.1);
       border:1px solid rgba(232,255,71,.2);
       color:var(--accent); font-size:1.2rem;
       display:flex; align-items:center; justify-content:center;
-      cursor:pointer; transition:background .2s;
+      cursor:default; transition:background .2s;
     }
     .add-btn:hover { background:rgba(232,255,71,.2); }
 
@@ -194,7 +193,7 @@
     }
     .banner-content { position:relative; z-index:1; max-width:480px; }
     .banner-tag { font-size:.75rem; font-weight:700; color:#a78bfa; letter-spacing:.1em; text-transform:uppercase; margin-bottom:12px; }
-    .banner h2 { font-family:'Clash Display',sans-serif; font-size:2.4rem; font-weight:700; letter-spacing:-.03em; margin-bottom:16px; line-height:1.1; }
+    .banner h2 { font-family:system-ui, sans-serif; font-size:2.4rem; font-weight:700; letter-spacing:-.03em; margin-bottom:16px; line-height:1.1; }
     .banner p { color:var(--muted); line-height:1.7; margin-bottom:28px; }
     .banner-emoji { font-size:8rem; position:relative; z-index:1; }
 
@@ -205,7 +204,7 @@
       border-top:1px solid var(--border);
       display:flex; justify-content:space-between; align-items:center;
     }
-    .footer-logo { font-family:'Clash Display',sans-serif; font-size:1.2rem; font-weight:700; }
+    .footer-logo { font-family:system-ui, sans-serif; font-size:1.2rem; font-weight:700; }
     .footer-logo span { color:var(--accent); }
     footer p { color:var(--muted); font-size:.82rem; }
 
@@ -221,18 +220,23 @@
       footer { flex-direction:column; gap:12px; padding:32px 20px; text-align:center; }
     }
   </style>
+  <meta name="description" content="Prototipo estático. Productos y precios de muestra; sin carrito funcional, compras ni pagos.">
+  <link rel="stylesheet" href="css/demos.css">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 </head>
-<body>
+<body class="demo-tienda">
+  <aside class="demo-notice" aria-label="Acerca de esta demostración"><a href="index.html">← Volver al portafolio</a><p>Prototipo estático. Productos y precios de muestra; sin carrito funcional, compras ni pagos.</p></aside>
+  <main id="demo-contenido">
 
   <nav>
     <div class="nav-logo">Nova<span>Tech</span></div>
     <ul class="nav-links">
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Productos</a></li>
-      <li><a href="#">Categorías</a></li>
-      <li><a href="#">Ofertas</a></li>
+      <li><span>Inicio</span></li>
+      <li><span>Productos</span></li>
+      <li><span>Categorías</span></li>
+      <li><span>Ofertas</span></li>
     </ul>
-    <a href="#" class="nav-cta">🛒 Carrito (3)</a>
+    <span class="nav-cta"> Carrito (3)</span>
   </nav>
 
   <!-- HERO -->
@@ -240,21 +244,16 @@
     <div class="hero-content">
       <div class="hero-badge">✦ Nuevos productos 2026</div>
       <h1>Tecnología que <em>define</em> tu estilo</h1>
-      <p>Los mejores gadgets, accesorios y dispositivos del mercado. Envío gratis en pedidos mayores a $50. Garantía de 2 años en todos los productos.</p>
+      <p>Exploración visual de un catálogo de tecnología. Los productos y precios son ejemplos para esta demostración.</p>
       <div class="hero-btns">
         <a href="#productos" class="btn-yellow">Ver productos</a>
-        <a href="#" class="btn-ghost">Ver ofertas →</a>
+        <span class="btn-ghost">Ver ofertas →</span>
       </div>
     </div>
   </section>
 
   <!-- STATS -->
-  <div class="stats">
-    <div class="stat-item"><span class="stat-num">12K+</span><span class="stat-label">Clientes satisfechos</span></div>
-    <div class="stat-item"><span class="stat-num">850+</span><span class="stat-label">Productos disponibles</span></div>
-    <div class="stat-item"><span class="stat-num">98%</span><span class="stat-label">Reseñas positivas</span></div>
-    <div class="stat-item"><span class="stat-num">24/7</span><span class="stat-label">Soporte al cliente</span></div>
-  </div>
+
 
   <!-- PRODUCTOS -->
   <section class="section" id="productos">
@@ -263,13 +262,13 @@
         <p class="section-tag">// destacados</p>
         <h2 class="section-title">Productos populares</h2>
       </div>
-      <a href="#" class="ver-todos">Ver todos →</a>
+      <span class="ver-todos">Ver todos →</span>
     </div>
     <div class="products-grid">
 
       <div class="product-card">
         <div class="product-img c1">
-          🎧
+
           <span class="product-badge">NUEVO</span>
         </div>
         <div class="product-info">
@@ -284,7 +283,7 @@
 
       <div class="product-card">
         <div class="product-img c2">
-          ⌚
+
           <span class="product-badge">-30%</span>
         </div>
         <div class="product-info">
@@ -299,7 +298,7 @@
 
       <div class="product-card">
         <div class="product-img c3">
-          📱
+
         </div>
         <div class="product-info">
           <p class="product-category">Smartphones</p>
@@ -313,7 +312,7 @@
 
       <div class="product-card">
         <div class="product-img c4">
-          💻
+
           <span class="product-badge">HOT</span>
         </div>
         <div class="product-info">
@@ -335,16 +334,17 @@
       <p class="banner-tag">✦ Oferta limitada</p>
       <h2>Membresía Premium sin costo el primer mes</h2>
       <p>Accede a envíos express, descuentos exclusivos y soporte prioritario. Cancela cuando quieras.</p>
-      <a href="#" class="btn-yellow">Activar ahora</a>
+      <span class="btn-yellow">Activar ahora</span>
     </div>
-    <div class="banner-emoji">🚀</div>
+    <div class="banner-emoji"></div>
   </div>
 
   <!-- FOOTER -->
   <footer>
     <div class="footer-logo">Nova<span>Tech</span></div>
-    <p>© 2026 NovaTech Store — Todos los derechos reservados</p>
+    <p> 2026 NovaTech Store — Todos los derechos reservados</p>
   </footer>
 
+  </main>
 </body>
 </html>

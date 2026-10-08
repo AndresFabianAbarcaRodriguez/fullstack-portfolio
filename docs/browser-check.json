@@ -1,0 +1,114 @@
+{
+  "results": [
+    {
+      "file": "index.html",
+      "width": 375,
+      "overflow": false,
+      "headings": 1,
+      "brokenImages": 0,
+      "missingAnchors": [],
+      "overflowElements": []
+    },
+    {
+      "file": "index.html",
+      "width": 768,
+      "overflow": false,
+      "headings": 1,
+      "brokenImages": 0,
+      "missingAnchors": [],
+      "overflowElements": []
+    },
+    {
+      "file": "index.html",
+      "width": 1440,
+      "overflow": false,
+      "headings": 1,
+      "brokenImages": 0,
+      "missingAnchors": [],
+      "overflowElements": []
+    },
+    {
+      "file": "proyecto-clima.html",
+      "width": 375,
+      "overflow": false,
+      "headings": 1,
+      "brokenImages": 0,
+      "missingAnchors": [],
+      "overflowElements": []
+    },
+    {
+      "file": "proyecto-clima.html",
+      "width": 768,
+      "overflow": false,
+      "headings": 1,
+      "brokenImages": 0,
+      "missingAnchors": [],
+      "overflowElements": []
+    },
+    {
+      "file": "proyecto-clima.html",
+      "width": 1440,
+      "overflow": false,
+      "headings": 1,
+      "brokenImages": 0,
+      "missingAnchors": [],
+      "overflowElements": []
+    },
+    {
+      "file": "proyecto-pos.html",
+      "width": 375,
+      "overflow": false,
+      "headings": 1,
+      "brokenImages": 0,
+      "missingAnchors": [],
+      "overflowElements": []
+    },
+    {
+      "file": "proyecto-pos.html",
+      "width": 768,
+      "overflow": false,
+      "headings": 1,
+      "brokenImages": 0,
+      "missingAnchors": [],
+      "overflowElements": []
+    },
+    {
+      "file": "proyecto-pos.html",
+      "width": 1440,
+      "overflow": false,
+      "headings": 1,
+      "brokenImages": 0,
+      "missingAnchors": [],
+      "overflowElements": []
+    },
+    {
+      "file": "proyecto-tienda.html",
+      "width": 375,
+      "overflow": false,
+      "headings": 1,
+      "brokenImages": 0,
+      "missingAnchors": [],
+      "overflowElements": []
+    },
+    {
+      "file": "proyecto-tienda.html",
+      "width": 768,
+      "overflow": false,
+      "headings": 1,
+      "brokenImages": 0,
+      "missingAnchors": [],
+      "overflowElements": []
+    },
+    {
+      "file": "proyecto-tienda.html",
+      "width": 1440,
+      "overflow": false,
+      "headings": 1,
+      "brokenImages": 0,
+      "missingAnchors": [],
+      "overflowElements": []
+    }
+  ],
+  "errors": [],
+  "mobileMenu": "passed"
+}

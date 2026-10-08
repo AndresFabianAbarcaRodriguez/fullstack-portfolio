@@ -4,7 +4,6 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SkyPulse — Clima & Noticias</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
     :root {
@@ -19,7 +18,7 @@
       --border: #e2e8f0;
     }
     html { scroll-behavior: smooth; }
-    body { background:var(--bg); color:var(--text); font-family:'DM Sans', sans-serif; overflow-x:hidden; }
+    body { background:var(--bg); color:var(--text); font-family:system-ui, sans-serif; overflow-x:hidden; }
 
     /* NAV */
     nav {
@@ -30,8 +29,8 @@
       backdrop-filter:blur(12px);
       border-bottom:1px solid var(--border);
     }
-    .nav-logo { font-family:'DM Serif Display',serif; font-size:1.5rem; color:var(--sky2); }
-    .nav-logo sup { font-size:.6rem; color:var(--warm); font-family:'DM Sans',sans-serif; font-weight:700; vertical-align:super; }
+    .nav-logo { font-family:system-ui, sans-serif; font-size:1.5rem; color:var(--sky2); }
+    .nav-logo sup { font-size:.6rem; color:var(--warm); font-family:system-ui, sans-serif; font-weight:700; vertical-align:super; }
     .nav-links { display:flex; gap:28px; list-style:none; }
     .nav-links a { text-decoration:none; color:var(--muted); font-size:.9rem; font-weight:500; transition:color .2s; }
     .nav-links a:hover, .nav-links a.active { color:var(--sky2); }
@@ -40,7 +39,7 @@
       background:var(--bg2); border:1px solid var(--border);
       border-radius:100px; padding:8px 18px;
       font-size:.88rem; color:var(--muted);
-      cursor:pointer; transition:border-color .2s;
+      cursor:default; transition:border-color .2s;
     }
     .nav-search:hover { border-color:var(--sky); }
 
@@ -67,7 +66,7 @@
     .weather-location { font-size:.88rem; font-weight:500; opacity:.8; margin-bottom:8px; }
     .weather-location span { font-weight:700; }
     .weather-temp {
-      font-family:'DM Serif Display',serif;
+      font-family:system-ui, sans-serif;
       font-size:clamp(4rem,10vw,8rem);
       line-height:1; letter-spacing:-.04em;
       margin-bottom:8px;
@@ -104,14 +103,14 @@
 
     /* NOTICIAS */
     .section-tag { font-size:.72rem; font-weight:700; color:var(--sky2); letter-spacing:.1em; text-transform:uppercase; margin-bottom:8px; }
-    .section-title { font-family:'DM Serif Display',serif; font-size:1.8rem; color:var(--text); margin-bottom:28px; }
+    .section-title { font-family:system-ui, sans-serif; font-size:1.8rem; color:var(--text); margin-bottom:28px; }
 
     .news-featured {
       background:var(--card); border-radius:16px;
       overflow:hidden; border:1px solid var(--border);
       margin-bottom:20px;
       display:grid; grid-template-columns:1fr 1fr;
-      transition:box-shadow .2s; cursor:pointer;
+      transition:box-shadow .2s; cursor:default;
     }
     .news-featured:hover { box-shadow:0 8px 32px rgba(0,0,0,.08); }
     .news-featured-img {
@@ -128,7 +127,7 @@
       text-transform:uppercase; letter-spacing:.06em;
       margin-bottom:12px;
     }
-    .news-featured-body h2 { font-family:'DM Serif Display',serif; font-size:1.4rem; line-height:1.3; margin-bottom:10px; }
+    .news-featured-body h2 { font-family:system-ui, sans-serif; font-size:1.4rem; line-height:1.3; margin-bottom:10px; }
     .news-featured-body p { color:var(--muted); font-size:.88rem; line-height:1.65; margin-bottom:16px; font-weight:300; }
     .news-meta { font-size:.78rem; color:var(--muted); }
     .news-meta strong { color:var(--text); }
@@ -137,7 +136,7 @@
     .news-card {
       background:var(--card); border-radius:12px;
       border:1px solid var(--border); overflow:hidden;
-      transition:box-shadow .2s, transform .2s; cursor:pointer;
+      transition:box-shadow .2s, transform .2s; cursor:default;
     }
     .news-card:hover { box-shadow:0 8px 24px rgba(0,0,0,.07); transform:translateY(-2px); }
     .news-card-img {
@@ -159,7 +158,7 @@
       background:var(--card); border-radius:16px;
       border:1px solid var(--border); padding:24px;
     }
-    .widget-title { font-family:'DM Serif Display',serif; font-size:1.1rem; margin-bottom:16px; }
+    .widget-title { font-family:system-ui, sans-serif; font-size:1.1rem; margin-bottom:16px; }
     .alert-item {
       display:flex; gap:12px; align-items:flex-start;
       padding:12px 0; border-bottom:1px solid var(--border);
@@ -173,7 +172,7 @@
       border-radius:12px; padding:20px; text-align:center;
       border:1px solid #bbf7d0;
     }
-    .aq-num { font-family:'DM Serif Display',serif; font-size:3.5rem; color:#16a34a; line-height:1; }
+    .aq-num { font-family:system-ui, sans-serif; font-size:3.5rem; color:#16a34a; line-height:1; }
     .aq-label { font-size:.78rem; font-weight:600; color:#16a34a; text-transform:uppercase; letter-spacing:.08em; margin:6px 0 12px; }
     .aq-desc { font-size:.82rem; color:#4ade80; }
     .trend-item {
@@ -191,7 +190,7 @@
       display:flex; justify-content:space-between; align-items:center;
       color:var(--muted); font-size:.82rem;
     }
-    .footer-logo { font-family:'DM Serif Display',serif; font-size:1.1rem; color:var(--sky2); }
+    .footer-logo { font-family:system-ui, sans-serif; font-size:1.1rem; color:var(--sky2); }
 
     @media(max-width:768px) {
       nav { padding:0 20px; }
@@ -207,44 +206,49 @@
       footer { flex-direction:column; gap:8px; padding:24px 20px; }
     }
   </style>
+  <meta name="description" content="Prototipo estático. Clima, noticias y alertas de muestra; sin conexión a API ni búsqueda de ciudades.">
+  <link rel="stylesheet" href="css/demos.css">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 </head>
-<body>
+<body class="demo-clima">
+  <aside class="demo-notice" aria-label="Acerca de esta demostración"><a href="index.html">← Volver al portafolio</a><p>Prototipo estático. Clima, noticias y alertas de muestra; sin conexión a API ni búsqueda de ciudades.</p></aside>
+  <main id="demo-contenido">
 
   <nav>
     <div class="nav-logo">SkyPulse<sup>BETA</sup></div>
     <ul class="nav-links">
-      <li><a href="#" class="active">Clima</a></li>
-      <li><a href="#">Noticias</a></li>
-      <li><a href="#">Mapas</a></li>
-      <li><a href="#">Alertas</a></li>
+      <li><span class="active">Clima</span></li>
+      <li><span>Noticias</span></li>
+      <li><span>Mapas</span></li>
+      <li><span>Alertas</span></li>
     </ul>
-    <div class="nav-search">🔍 Buscar ciudad...</div>
+    <div class="nav-search"> Buscar ciudad...</div>
   </nav>
 
   <!-- WEATHER HERO -->
-  <div class="weather-hero">
+  <div class="weather-hero" id="clima">
     <div class="weather-grid">
       <div>
-        <p class="weather-location">📍 <span>San José, Costa Rica</span> — Martes, 3 de Marzo 2026</p>
+        <p class="weather-location"> <span>San José, Costa Rica</span> — Martes, 3 de Marzo 2026</p>
         <div class="weather-temp">24<sup>°</sup></div>
-        <p class="weather-desc">☀️ Parcialmente nublado</p>
+        <p class="weather-desc"> Parcialmente nublado</p>
         <div class="weather-meta">
-          <div class="weather-meta-item"><span>💧</span><span>Humedad 78%</span></div>
-          <div class="weather-meta-item"><span>🌬️</span><span>Viento 14 km/h</span></div>
-          <div class="weather-meta-item"><span>👁️</span><span>Visibilidad 10km</span></div>
-          <div class="weather-meta-item"><span>🌡️</span><span>Sensación 26°</span></div>
+          <div class="weather-meta-item"><span></span><span>Humedad 78%</span></div>
+          <div class="weather-meta-item"><span></span><span>Viento 14 km/h</span></div>
+          <div class="weather-meta-item"><span></span><span>Visibilidad 10km</span></div>
+          <div class="weather-meta-item"><span></span><span>Sensación 26°</span></div>
         </div>
       </div>
-      <div class="weather-icon">⛅</div>
+      <div class="weather-icon"></div>
     </div>
     <div class="forecast">
-      <div class="forecast-item"><div class="forecast-day">Hoy</div><div class="forecast-icon">⛅</div><div class="forecast-temp">24° <span>18°</span></div></div>
-      <div class="forecast-item"><div class="forecast-day">Mié</div><div class="forecast-icon">🌧️</div><div class="forecast-temp">22° <span>17°</span></div></div>
-      <div class="forecast-item"><div class="forecast-day">Jue</div><div class="forecast-icon">⛈️</div><div class="forecast-temp">19° <span>15°</span></div></div>
-      <div class="forecast-item"><div class="forecast-day">Vie</div><div class="forecast-icon">🌦️</div><div class="forecast-temp">21° <span>16°</span></div></div>
-      <div class="forecast-item"><div class="forecast-day">Sáb</div><div class="forecast-icon">☀️</div><div class="forecast-temp">26° <span>19°</span></div></div>
-      <div class="forecast-item"><div class="forecast-day">Dom</div><div class="forecast-icon">☀️</div><div class="forecast-temp">27° <span>20°</span></div></div>
-      <div class="forecast-item"><div class="forecast-day">Lun</div><div class="forecast-icon">⛅</div><div class="forecast-temp">25° <span>18°</span></div></div>
+      <div class="forecast-item"><div class="forecast-day">Hoy</div><div class="forecast-icon"></div><div class="forecast-temp">24° <span>18°</span></div></div>
+      <div class="forecast-item"><div class="forecast-day">Mié</div><div class="forecast-icon"></div><div class="forecast-temp">22° <span>17°</span></div></div>
+      <div class="forecast-item"><div class="forecast-day">Jue</div><div class="forecast-icon"></div><div class="forecast-temp">19° <span>15°</span></div></div>
+      <div class="forecast-item"><div class="forecast-day">Vie</div><div class="forecast-icon"></div><div class="forecast-temp">21° <span>16°</span></div></div>
+      <div class="forecast-item"><div class="forecast-day">Sáb</div><div class="forecast-icon"></div><div class="forecast-temp">26° <span>19°</span></div></div>
+      <div class="forecast-item"><div class="forecast-day">Dom</div><div class="forecast-icon"></div><div class="forecast-temp">27° <span>20°</span></div></div>
+      <div class="forecast-item"><div class="forecast-day">Lun</div><div class="forecast-icon"></div><div class="forecast-temp">25° <span>18°</span></div></div>
     </div>
   </div>
 
@@ -252,21 +256,21 @@
   <div class="main">
     <div>
       <p class="section-tag">// últimas noticias</p>
-      <h2 class="section-title">Lo más relevante hoy</h2>
+      <h1 class="section-title" id="noticias">Noticias de ejemplo</h1>
 
       <div class="news-featured">
-        <div class="news-featured-img">🌍</div>
+        <div class="news-featured-img"></div>
         <div class="news-featured-body">
           <span class="news-cat">Tecnología</span>
           <h2>La IA revoluciona el pronóstico del tiempo con predicciones de hasta 30 días</h2>
           <p>Nuevos modelos de inteligencia artificial logran predecir patrones climáticos con una precisión sin precedentes, transformando la forma en que nos preparamos ante fenómenos naturales.</p>
-          <p class="news-meta"><strong>Reuters</strong> · hace 2 horas</p>
+          <p class="news-meta">Contenido ficticio para demostración</p>
         </div>
       </div>
 
       <div class="news-grid">
         <div class="news-card">
-          <div class="news-card-img nc1">🌱</div>
+          <div class="news-card-img nc1"></div>
           <div class="news-card-body">
             <span class="news-cat" style="font-size:.65rem">Ambiente</span>
             <h3>Costa Rica alcanza 99% de energía renovable en 2026</h3>
@@ -274,7 +278,7 @@
           </div>
         </div>
         <div class="news-card">
-          <div class="news-card-img nc2">⚡</div>
+          <div class="news-card-img nc2"></div>
           <div class="news-card-body">
             <span class="news-cat" style="font-size:.65rem">Energía</span>
             <h3>Tormenta eléctrica afecta el Valle Central esta tarde</h3>
@@ -282,7 +286,7 @@
           </div>
         </div>
         <div class="news-card">
-          <div class="news-card-img nc3">🏔️</div>
+          <div class="news-card-img nc3"></div>
           <div class="news-card-body">
             <span class="news-cat" style="font-size:.65rem">Turismo</span>
             <h3>Volcán Poás reabre tras temporada de lluvia</h3>
@@ -290,7 +294,7 @@
           </div>
         </div>
         <div class="news-card">
-          <div class="news-card-img nc4">🌊</div>
+          <div class="news-card-img nc4"></div>
           <div class="news-card-body">
             <span class="news-cat" style="font-size:.65rem">Océanos</span>
             <h3>Alerta por marejadas en costas del Pacífico Norte</h3>
@@ -303,23 +307,23 @@
     <!-- SIDEBAR -->
     <div class="sidebar">
       <div class="widget">
-        <h3 class="widget-title">🔔 Alertas activas</h3>
+        <h3 class="widget-title"> Alertas activas</h3>
         <div class="alert-item">
-          <span class="alert-icon">⛈️</span>
+          <span class="alert-icon"></span>
           <div class="alert-text"><h4>Tormenta eléctrica</h4><p>Valle Central · 3pm–7pm hoy</p></div>
         </div>
         <div class="alert-item">
-          <span class="alert-icon">🌊</span>
+          <span class="alert-icon"></span>
           <div class="alert-text"><h4>Marejadas fuertes</h4><p>Pacífico Norte · Sáb y Dom</p></div>
         </div>
         <div class="alert-item">
-          <span class="alert-icon">🌬️</span>
+          <span class="alert-icon"></span>
           <div class="alert-text"><h4>Vientos fuertes</h4><p>Zona Norte · hasta 60 km/h</p></div>
         </div>
       </div>
 
       <div class="widget">
-        <h3 class="widget-title">🌿 Calidad del aire</h3>
+        <h3 class="widget-title"> Calidad del aire</h3>
         <div class="air-quality">
           <div class="aq-num">42</div>
           <div class="aq-label">Buena</div>
@@ -327,21 +331,13 @@
         </div>
       </div>
 
-      <div class="widget">
-        <h3 class="widget-title">🔥 Trending</h3>
-        <div class="trend-item"><span class="trend-num">1</span><span class="trend-topic">Lluvia en San José</span><span class="trend-count">12.4K</span></div>
-        <div class="trend-item"><span class="trend-num">2</span><span class="trend-topic">Volcán Poás</span><span class="trend-count">8.1K</span></div>
-        <div class="trend-item"><span class="trend-num">3</span><span class="trend-topic">Ola de calor</span><span class="trend-count">5.9K</span></div>
-        <div class="trend-item"><span class="trend-num">4</span><span class="trend-topic">Tormenta Pacífico</span><span class="trend-count">4.2K</span></div>
-        <div class="trend-item"><span class="trend-num">5</span><span class="trend-topic">Energía renovable CR</span><span class="trend-count">3.7K</span></div>
-      </div>
     </div>
   </div>
-
   <footer>
     <div class="footer-logo">SkyPulse</div>
-    <p>© 2026 SkyPulse — Datos actualizados cada 15 minutos</p>
+    <p> 2026 SkyPulse — Demostración con datos estáticos</p>
   </footer>
 
+  </main>
 </body>
 </html>
